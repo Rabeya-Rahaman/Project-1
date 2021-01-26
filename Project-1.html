@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project_1</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+		nav
+		{
+			height: 80px;
+			/line-height: 60px;/
+			display: inline;
+			justify-content: space-between;
+			align-items: center;
+			background: #fdfdfd;
+			background-color: black;
+
+		}
+		ul
+		{
+			padding: 30px;
+			margin: 0;
+			list-style: none;
+			overflow: hidden;
+		}
+		a
+		{
+			text-decoration: none;
+		}
+		img.middle
+		{
+			vertical-align: baseline;
+			height: 40px;
+			width: 60px;
+			
+		
+		}
+		.last-menu{
+			display:flex;
+		}
+		.last-menu li{
+			margin-right: 30px;
+		}
+		.last-menu li a{
+			color: white;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			transition: .5s ease-out;
+		}
+		.last-menu li a:hover{
+			color: #ff4f81;
+			transition: .5s ease-in;
+		}
+
+		
+
+		.n2,.n3,.n4,.n5,.n6,.n7,.n8,.n9
+		{
+			position: relative;
+			left: 120px;
+
+		}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 100px 100px 100px 100px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+.grid-container1 > div {
+  background-color: #DEDFE1;
+  text-align: left;
+  padding: 150px 30px 20px 250px;
+  font-size: 40px;
+}
+.item{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+}
+.item p{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+}
+.item a{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: white;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  padding: 30px;
+
+}
+ 
+.grid-container > div {
+  background-color: #DEDFE1;
+  text-align: center;
+  }
+.item1{
+	grid-row-end: span 2;
+	margin-left: 20px;
+	padding: 250px 10px 10px 20px;
+	font-size: 30px;
+	}
+	.item1 p{
+	grid-row-end: span 2;
+	margin-left: 20px;
+	text-align: center;
+	font-size: 10px;
+	}
+.item1 a{
+	grid-row-end: span 2;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: #ff0000;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+.item2{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	padding: 30px 10px 10px 30px;
+	font-size: 15px;
+	font-weight: 900;
+}
+.item2 p{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	text-align: center;
+	font-size: 35px;
+	padding: 0px 10px 10px 0px;
+	font-weight:700;
+
+	}
+.item2 a{
+	grid-column-end: span 2;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: yellow;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+.item3{
+	margin-left: 1px;
+	padding: 220px 30px 30px 30px;
+	font-size: 25px;
+	font-weight: 900;
+}
+.item3 p{
+	margin-left: 1px;
+	text-align: center;
+	font-size: 15px;
+	padding: 0px 10px 10px 0px;
+	}
+	.item4{
+	margin-left: 1px;
+	padding: 100px 70px 70px 0px;
+	font-size: 30px;
+	font-weight: 1000;
+}
+.item4 p{
+	margin-left: 1px;
+	text-align: center;
+	font-size: 15px;
+	padding: 0px 10px 10px 0px;
+	font-weight:900;
+
+	}
+.item4 a{
+	margin-left: 1px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: white;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+
+.item5{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	padding: 150px 150px 150px 0px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.item5 p{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	font-size: 15px;
+	padding: 0px 0px 0px 370px;
+	font-weight:900;
+
+	}
+.item5 a{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:20px 20px 20px 20px;
+	background: black;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+
+.text{
+	position: relative;
+	left: 200px;
+	font-size: 20px;
+}
+.flex-container {
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px 180px 180px;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-gap: 10px;
+  margin-right: 50px;
+  justify-content: center;
+   flex-wrap: nowrap;
+  background-color:  #F5F5F5;
+}
+ 
+.flex-container>div {
+  background-color: white;
+  width: 180px;
+  height: 300px;
+  margin: 10px;
+  margin-left: 0px;
+  margin-right:30px;
+  }
+
+
+span.feature1, span.feature2, span.feature3, span.feature4, span.feature5, span.feature6{
+	position: relative;
+	left: 20px;
+	top: 200px;
+	font-size: 12px;
+}
+
+
+
+.item7 a, .item8 a, .item9 a, .item10 a, .item11 a, .item12 a{
+	grid-column-end: span 2;
+	margin-left: 1px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:20px 20px 20px 20px;
+	background: red;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+	position: relative;
+	top: 210px;
+	left: 20px;
+
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px ;
+  grid-template-rows: 80px 80px 80px 80px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+.grid-container2 > div {
+  background-color: #333333;
+  text-align: left;
+  padding: 150px 30px 20px 250px;
+  margin-left: 200px;
+  margin-right: 200px;
+  }
+.black{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	margin-right: 35px;
+	text-align: left;
+	font-size: 15px;
+	color:#FEFEFE;
+}
+.material-icons{
+	position: relative;
+	bottom: 80px;
+	right: 220px;
+	background-color: yellow;
+	border-radius: 10px;
+
+}
+p.one{
+	position: relative;
+	bottom: 110px;
+	right: 180px;
+	}
+hr.one{
+	position: relative;
+	bottom: 270px;
+	right: 400px;
+}
+p.two{
+	position: relative;
+	bottom:  450px;
+	left: 120px;
+	}
+hr.two{
+	position: relative;
+	bottom:  610px;
+	left: -90px;
+}
+p.three{
+	position: relative;
+	bottom:  800px;
+	left: 400px;
+	}
+hr.three{
+	position: relative;
+	bottom:  950px;
+	left: 170px;
+}
+p.four{
+	position: relative;
+	bottom:  1140px;
+	left: 700px;
+	}
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 100px 100px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+.grid-container3 > div {
+  background-color: #E8EEF8;
+  text-align: left;
+  padding: 150px 30px 20px 250px;
+  font-size: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.ash{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 20px;
+	font-weight:800;
+}
+.ash p{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-color:#E4D8BD;
+}
+.ash li{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-color:#E4D8BD;
+	list-style: disc;
+}
+.ash a{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 1px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:20px 20px 20px 20px;
+	background: orange;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+
+
+a.one{
+	grid-row-end: span 2;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: white;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+a.two{
+	grid-row-end: span 2;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:10px 10px 10px 10px;
+	background: yellow;
+	padding: 10px;
+	width: 10px;
+	height: 10px;
+
+}
+
+ .surma {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px ;
+  grid-template-rows: 80px 80px 80px 80px;
+  justify-content: center;
+  grid-gap: 20px;
+  background-color: #F5F5F5;
+ }
+.surma > div {
+  background-color: #FFFFFF;
+  font-size: 10px;
+  padding: 30px;
+  margin-left: 215px;
+  margin-right: 240px;
+  float: left;
+  }
+
+.s1{
+  height: 60px;
+  width: 330px;
+ 
+}
+.s2{
+  height: 60px;
+  width: 330px;
+}
+.s3{
+  height: 60px;
+  width: 330px;
+}
+
+.padma {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  grid-template-rows: 200px 200px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  
+}
+.padma > div {
+  background-color: #CCCCCC;
+  text-align: left;
+  padding: 150px 30px 20px 250px;
+  font-size: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.p1{
+	grid-row-end: span 2;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	color: white;
+	font-size: 10px;
+	font-weight:800;
+	padding: 30px ;
+}
+a.three{
+	grid-row-end: span 2;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:20px 20px 20px 20px;
+	background: white;
+	padding: 10px;
+	width: 50px;
+	height: 10px;
+
+}
+a.four{
+	grid-row-end: span 2;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	text-align: left;
+	font-size: 10px;
+	font-width:20px;
+	border-radius:20px 20px 20px 20px;
+	background: yellow;
+	padding: 10px;
+	width: 50px;
+	height: 10px;
+
+}
+.blog{
+	position: relative;
+	left: 800px;
+	}
+.meghna {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px ;
+  grid-template-rows: 80px 80px 80px 80px;
+  justify-content: center;
+  grid-gap: 20px;
+  background-color: #F5F5F5;
+ }
+.meghna > div {
+  background-color: #E9E9E9;
+  font-size: 10px;
+  padding: 30px;
+  margin-left: 215px;
+  margin-right: 240px;
+  float: left;
+  }
+
+.m1{
+  height: 200px;
+  width: 300px;
+ 
+}
+.m2{
+  height: 200px;
+  width: 300px;
+}
+.m3{
+  height: 200px;
+  width: 300px;
+}
+
+button
+{
+	position: relative;
+	top:175px;
+	right: 25px;
+	height: 50px;
+	border-radius: 5px;
+	background-color:#E12020;
+	color: white;
+}
+
+.end {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px ;
+  grid-template-rows: 80px 80px 80px 80px;
+  justify-content: center;
+  grid-gap: 10px;
+  background-color: #F5F5F5;
+  padding: 30px;
+}
+.end > div {
+  background-color: #333333;
+  text-align: left;
+  padding: 150px 30px 20px 250px;
+  margin-left: 200px;
+  margin-right: 200px;
+  }
+.black1{
+	grid-row-end: span 4;
+	grid-column-end: span 4;
+	margin-left: 20px;
+	margin-right: 35px;
+	text-align: left;
+	font-size: 15px;
+	color:#222222;
+}
+
+.e1
+{
+	color: white;
+	position: relative;
+	right: 180px;
+	bottom: 100px;
+	font-size: 8px;
+}
+h1.hr {
+		 width: 200%;
+        /*margin-left: 300px;*/
+        margin-right: 500px;
+      }
+/*.material-icons{
+	position: relative;
+	bottom: 80px;
+	right: 220px;
+	background-color: yellow;
+	border-radius: 10px;
+
+}*/
+</style>
+</head>
+<body>
+	<nav>
+			<ul class="last-menu">
+			<li><a href="#"><img class="middle" src="logo.jpg" alt=""></a></li>
+			<li><a href="#"><span class="n2">Home</span></a></li>
+			<li><a href="#"><span class="n3">Shop</span></a></li>
+			<li><a href="#"><span class="n4">Featured</span></a></li>
+			<li><a href="#"><span class="n5">Shortcode</span></a></li>
+			<li><a href="#"><span class="n6">Blog</span></a></li>
+			<li><a href="#"><span class="n7">Contact Us</span></a></li>
+			<li><a href="#"><span class="n8">Search</span></a></li>
+			<li><a href="#"><span class="n9">Settings</span></a></li>
+		</ul>
+	</nav>
+	
+
+	<div class="grid-container1">
+	  <div class="item"><b> <font color="#E64B3B"> A </b> perfect </font color> cup, mug or <br>carafe every time
+	  	<p>Customizable settings, strength control, and the most brew size options ensures<br>
+	  	that you can enjoy your favorite beverages your way.</p>
+	  		<a href="#">VIEW MORE</a>
+	</div> 
+	</div>
+
+	
+
+	<div class="grid-container">
+		<div class="item1"><font color="yellow">Insightfull <br>eye care</font><br><p><font color="white">call today for a comprehensive vision test</font></p><a href="#">REQUEST APPOINTMENT</a>
+	</div>
+	<div class="item2">LET'S CREATE SOMETHING<p>AWESOME</p><a href="#">SHOP NOW</a></div>
+	  <div class="item3">Impressa Z9 <p>Sophistication and extravagance</p></div>  
+	  <div class="item4"><font color="#E64B3B">C</font color>anberra <br><font color="#E64B3B"> C</font color>offee <br><p>Just <font color="#E64B3B">$2.5</font color></p><a href="#">TRY IT NOW</a></div>
+	  <div class="item5">Shop within 24Hrs <br><a href="#">BUY NOW</a><p>Coffee Day <br>Commercial <br> Coffee <br><font color="#E64B3B">$1.50</font color></p><a href="#">BUY NOW</a></div>
+	  	<br><br><br>
+	  	<p ><span class="text">The latest featured products <br><strong>FEATURED PRODUCTS</strong></span></p>
+	    </div>
+    
+  
+	
+	<div class="flex-container">
+	  	<div class="item7"><span class="feature1">Cuisinart DCC 3000 Coffee on Demand 12-C | $15.00</span> <br><a href="#">ADD TO CART</a></div>
+	  	<div class="item8"><span class="feature2">rip Coffee Makers | $15.00</span><br><a href="#">ADD TO CART</a></div>
+	  	<div class="item9"><span class="feature3">Gucci GG1008 Eyeglasses Gucci Eyeglasses | $25.00 $15.00</span><br><a href="#">ADD TO CART</a></div>
+	  	<div class="item10"><span class="feature4">Gucci GG1008 Eyeglasses Gucci Eyeglasses | $15.00</span><br><a href="#">ADD TO CART</a></div>
+	  	<div class="item11"><span class="feature5">Gucci GG1008 Eyeglasses Gucci Eyeglasses | $15.00</span><br><a href="#">ADD TO CART</a></div>
+	  	<div class="item12"><span class="feature6">long shirt - mini skirt - Organic Cotton Tunic | $15.00</span><br><a href="#">ADD TO CART</a></div>
+	</div>
+
+
+<div class="grid-container2">
+	<div class="black"><i class="material-icons">explore_off</i><p class="one"><font size="4">Freeshipping on order over $100</font> <br><br>Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br>Lorem Ipsum has been the industry's <br> standard dummy text <br><a href="#">READ MORE</a></p> <hr class="one" width="1" size="150"> <br>
+		<!-- <i class="fas fa-car"></i> --><p class="two"><font size="4">10% off the bill</font> <br><br>Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br>Lorem Ipsum has been the industry's <br> standard dummy text <br><a href="#">READ MORE</a></p><hr class="two" width="1" size="150"> <br>
+
+		<!-- <i class="fas fa-car"></i> --><p class="three"><font size="4">security payment</font> <br><br>Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br>Lorem Ipsum has been the industry's <br> standard dummy text <br><a href="#">READ MORE</a></p><hr class="three" width="1" size="150"> <br>
+
+		<!-- <i class="fas fa-car"></i> --><p class="four"><font size="4">life support</font> <br><br>Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. <br>Lorem Ipsum has been the industry's <br> standard dummy text <br><a href="#">READ MORE</a></p>
+
+	</div>
+</div>
+
+
+
+<div class="grid-container3">
+	<div class="ash">Keurig® K15 Classic Series <br><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>
+the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of <br> type and scrambled it to make a type specimen book</p>
+<p>KEY FEATURES</p><ul><li>No Water Reservoir</li><li>Button Controls</li><li>Brews 6, 8, 10oz. with K-Cup® pods</li></ul><p>PRICE JUST<font color="#E64B3B"> $99.99</font color></p><a href="#">BUY NOW</a>
+</div>
+</div>
+
+
+
+<div class="surma">
+    <div class="s1"> <p><span position="relative" text-align="center"> Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s, when an <br>unknown printer took a galley of type and scrambled .” <br>SARA CONER</span></p></div>
+    
+    <div class="s2"> <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s, when an <br>unknown printer took a galley of type and scrambled .” <br>KIM SANDRA </p></div>
+    
+    <div class="s3"> <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s, when an <br>unknown printer took a galley of type and scrambled .” <br>KOMODORAT </p></div>
+</div>
+	
+
+	<div class="padma">
+		<div class="p1">30% discount for all products in the initial purchase. <br>APPLIES TO NEW MEMBERS <br><a class="three" href="#">READ MORE</a><a class="four" href="#">JOIN NOW</a></div>
+
+		<p><span class="blog">New our blogs <br><b>LATEST NEWS</b></span></p>
+	</div>
+	
+	
+	<div class="meghna">
+	<div class="m1"><button>21 May</button></div>
+	<div class="m2"><button>21 May</button></div>
+	<div class="m3"><button>21 May</button></div>
+	</div>
+
+	<div class="end">
+		<div class="black1">
+			<p>
+				<span class="e1">
+					<strong>
+						WHAT WE ARE ABOUT 
+					</strong>
+					<br><br><br>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+					<br>
+					een the industry's standard dummy text ever since the 1500s, when an unknown printer took a 
+					<br>galley of type and scrambled it to make a type.
+				</span>
+			</p>
+			<p>MORE INFO</p>
+			<hr class="h1">
+		</div>
+
+	</div>
+</body>
+</html>
